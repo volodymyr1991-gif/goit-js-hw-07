@@ -1,0 +1,22 @@
+.gallery-styles{
+    list-style: none;
+    display: block;
+    max-width: 100vh;
+    padding: 0 15px;
+}
+
+#validation-input {
+    border: 3px solid #bdbdbd;
+  }
+  
+  #validation-input.valid {
+    border-color: #4caf50;
+  }
+  
+  #validation-input.invalid {
+    border-color: #f44336;
+  }
+
+  .span{
+    
+  }
