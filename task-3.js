@@ -16,21 +16,18 @@ const images = [
   },
 ];
 
+const creatImages = (images) => {
+  const li = document.createElement("li");
+  li.classList.add("gallery__item");
+  const img = document.createElement("img");
+  img.classList.add("gallery-img");
+  img.setAttribute("src", images.url);
+  img.setAttribute("alt", images.alt);
+  li.appendChild(img);
+  return li;
+};
 
-
-
-const creatImages=(images)=>{
-  
-const li = document.createElement("li");
-li.classList.add("gallery__item");
-const img1 = document.createElement("img");
-img1.setAttribute("src",images.url);
-img1.setAttribute("alt",images.alt);
-li.appendChild(img1)
-return li
-}
-
-const container=images.map(image=>creatImages(image))
- console.log(container) 
- const containerGallery = document.querySelector("#gallery")
- containerGallery.append(...container)
+const container = images.map((image) => creatImages(image));
+console.log(container);
+const containerGallery = document.querySelector("#gallery");
+containerGallery.append(...container);

@@ -1,8 +1,28 @@
-.gallery-styles{
+#gallery{
+  padding: 0;
+width: 1350px;
+margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  /* justify-content: center; */
+  
+}
+.gallery-img{
+  
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.gallery__item{
+  width: 400px;
+  margin: 0;
+  padding: 0;
+
     list-style: none;
     display: block;
-    max-width: 100vh;
-    padding: 0 15px;
+    /* max-width: 100vh; */
+    
 }
 
 #validation-input {
@@ -17,6 +37,3 @@
     border-color: #f44336;
   }
 
-  .span{
-    
-  }

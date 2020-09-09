@@ -7,9 +7,9 @@ const ingredients = [
   "Приправи",
 ];
 
-const creatIngredience = (ingredience) => {
+const creatIngredience = (ingredient) => {
   const liRef = document.createElement("li");
-  liRef.textContent = ingredience;
+  liRef.textContent = ingredient;
   liRef.classList.add("ingredients-potato");
 
   return liRef;
